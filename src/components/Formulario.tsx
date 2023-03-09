@@ -45,7 +45,7 @@ export const Formulario = ({matriz, setMatriz, mostrarAsientos, success, error}:
       <input className="i3" type='number' id="inputcol" min='1' step='1' value={col} onChange={(evento) => setCol(evento.target.value)} />
 			<br/>
 
-			<label htmlFor='inputnom'> Nombre de quien reserva: </label>
+			<label htmlFor='inputnom'> Nombre de quién reserva: </label>
       <input className="i4" type='text' id="inputnom" value={nombre} onChange={(evento) => setNom(evento.target.value)} placeholder="Deje en blanco para remover reservación..." />
 			<br/>
 
