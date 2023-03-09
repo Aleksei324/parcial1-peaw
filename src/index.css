@@ -1,0 +1,149 @@
+:root {
+  --bg-white: #F0F2F5;
+  --bg-black: #202235;
+  --comp-white: #FFF;
+  --comp-black: #303245;
+  --text-white: #101215;
+  --text-black: #F0F2F5;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--text-black);
+  background-color: var(--bg-black);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  transition: border-color 0.25s;
+
+  width: 45%;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.comp {
+  background-color: var(--comp-black);
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.1);
+  margin: 2rem;
+  padding: 2rem;
+  width: 40rem;
+  height: 27rem;
+}
+.comp > div > * {
+  margin: 0.5rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.flex > * {
+  margin: 1rem;
+  line-height: 0.5;
+}
+
+.silla {
+  text-align: center;
+}
+
+.reservado {
+  border-radius: 1rem;
+  background-color: #747bff;
+  padding: 0.5rem;
+}
+
+.popup {
+  border-radius: 0.5rem;
+  text-align: center;
+  width: fit-content;
+}
+.popup > button {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+}
+.success {
+  background-color: cadetblue;
+}
+.error {
+  background-color: darkred;
+}
+
+.i1 {
+  width: 10rem;
+}
+.i2 {
+  width: 20rem;
+}
+.i3 {
+  width: 24rem;
+}
+.i4 {
+  width: 23rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--text-white);
+    background-color: var(--bg-white);
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+  .comp {
+    background-color: var(--comp-white);
+  }
+}
